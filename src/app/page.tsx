@@ -7,6 +7,7 @@ import ThemeToggle from "@/components/theme-toggle"
 
 import { Waitlist } from "@clerk/nextjs"
 import Waitlisted from "@/components/waitlist"
+import Image from "next/image"
 
 export default function Home() {
 
@@ -112,18 +113,9 @@ export default function Home() {
 
 
         <div className="mt-10 text-center">
-          <div className="flex justify-center -space-x-2">
-            {[...Array(5)].map((_, i) => (
-              <div
-                key={i}
-                className="relative h-8 w-8 overflow-hidden rounded-full border-2 border-white dark:border-gray-800 bg-gray-200 dark:bg-gray-700"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800" />
-              </div>
-            ))}
-          </div>
+  
           <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
-            Join <span className="font-medium">500+</span> professionals already on the waitlist
+          Be among <span className="font-medium"> the first </span> to explore a smarter way to schedule and connect.
           </p>
         </div>
       </main>
